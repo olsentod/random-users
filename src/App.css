@@ -1,39 +1,95 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #eee;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+h1,
+h2,
+p {
+  margin: 0;
 }
 
-.App-header {
-  min-height: 100vh;
+#app {
+  max-width: 1200px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.search-box {
+  width: 100%;
+  padding: 0.5rem 0.25rem;
+  font-size: 16px;
+  margin-bottom: 1rem;
+  border: 1px solid #bbb;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.users-table {
+  background-color: white;
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+.users-table td,
+.users-table th {
+  padding: 0.5rem;
+}
+
+.user {
+  cursor: pointer;
+}
+
+.user:hover {
+  background-color: #ddd;
+}
+
+.user-profile {
+  display: flex;
+  background-color: white;
+}
+
+.user-contact {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  padding: 1rem;
+  border-right: 0.5rem solid #eee;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.user-contact > img {
+  border-radius: 50%;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px)
-  }
-  100% {
-    transform: translateY(0px)
-  }
+.user-desc {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.user-desc > div {
+  width: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.user-desc > .break {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.user-desc .label {
+  color: #6f6f6f;
+}
+
+.go-back-btn {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
 }
